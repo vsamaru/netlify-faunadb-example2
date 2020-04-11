@@ -234,14 +234,14 @@ export default class App extends Component {
       const { data, ref } = todo
       const id = getTodoId(todo)
       // only show delete button after create API response returns
-      let deleteButton
-      if (ref) {
-        deleteButton = (
-          <button data-id={id} onClick={this.deleteTodo}>
-            del
-          </button>
-        )
-      }
+//       let deleteButton
+//       if (ref) {
+//         deleteButton = (
+//           <button data-id={id} onClick={this.deleteTodo}>
+//             del
+//           </button>
+//         )
+//       }
       const boxIcon = (data.completed) ? '#todo__box__done' : '#todo__box'
       return (
         <div key={i} className='todo-item'>
