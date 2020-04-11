@@ -238,7 +238,7 @@ export default class App extends Component {
       if (ref) {
         deleteButton = (
           <button data-id={id} onClick={this.deleteTodo}>
-            delete
+            del
           </button>
         )
       }
@@ -280,7 +280,7 @@ export default class App extends Component {
 
         <div className='todo-list'>
           <h2>
-            Create todo
+            ..add
             <SettingsIcon onClick={this.openModal} className='mobile-toggle' />
           </h2>
           <form className='todo-create-wrapper' onSubmit={this.saveTodo}>
@@ -294,7 +294,7 @@ export default class App extends Component {
             />
             <div className='todo-actions'>
               <button className='todo-create-button'>
-                Create todo
+                ➕
               </button>
               <SettingsIcon onClick={this.openModal}  className='desktop-toggle' />
             </div>
